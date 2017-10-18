@@ -11,8 +11,28 @@
 	 	var noAnswer = 0;
 
  	   
+
+
+ 	   function run() {
+	      intervalId = setInterval(decrement, 1000);
+	    }
+
+	 	
+	     //CREATED FUNCTION TO STOP THE GAME AFTER TIMER <=0
+	    function stop() {
+      		clearInterval(intervalId);
+      		$("#questionList").hide();
+	        $("#display").hide();
+	        $("#results").show();
+	        displayResults();
+    	}
+
+
+
+
+
 	 	//START GAME FUNCTION, HIDES / SHOWS INFORMATION
- 	    $("#StartButton").click(function () {
+ 	    	$("#StartButton").click(function () {
         	$("#SplashScreen").hide();
         	$("#display").show();
         	$("#questionList").show();
@@ -23,18 +43,8 @@
 
 
 
-		function run() {
-	      intervalId = setInterval(decrement, 1000);
-	    }
-
-	    //CREATED FUNCTION TO STOP THE GAME AFTER TIMER UP
-	    function stop() {
-      		clearInterval(intervalId);
-      		$("#questionList").hide();
-	        $("#display").hide();
-	        $("#results").show();
-	        displayResults();
-    	}
+		
+	   
 
 
 
@@ -47,6 +57,8 @@
 
 	      }
 	    }
+
+	    
 
 	    function restartGame(message) {
     		var restart = $("<button class='btn-lg active'>Restart</button>").click(function() {
