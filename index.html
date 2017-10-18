@@ -11,12 +11,13 @@
 
 	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="page-header">
-  <h1>HEADER GOES HERE</h1>
+  <h1 id="header">New York Yankees Quiz</h1>
 </div>
 
 
@@ -25,8 +26,7 @@
 <div class="container">
 	<div id="mainSection">
 		<div id="SplashScreen">
-			<h1>New York Yankees Trivia</h1>
-			<h1>Click Start to begin</h1>
+			<h1 id="intro">So you think you are a Yankees Fan!? Can you answer the following 10 questions in 50 seconds!?</h1>
 				<input id="StartButton" class="btn btn-primary" type="button" value="Start"/>
 		</div>
 
@@ -35,19 +35,28 @@
 				
 
 				<div id="questionList">
-					<h2>How many World Series have the New York Yankees Won?</h2>
-						<input type="radio" name="question1" value="correct"> 27 <br>
-						<input type="radio" name="question1" value="wrong"> 12 <br>
-						<input type="radio" name="question1" value="wrong"> 21 <br>
-						<input type="radio" name="question1" value="wrong"> 7 <br>
 						
+				<div class="panel panel-default">
+  					<div class="panel-body">
+    					<h2>How many World Series have the New York Yankees Won?</h2>
+							<input type="radio" name="question1" value="correct"> 27 <br>
+							<input type="radio" name="question1" value="wrong"> 12 <br>
+							<input type="radio" name="question1" value="wrong"> 21 <br>
+							<input type="radio" name="question1" value="wrong"> 7 <br>
+  					</div>
+				</div>
+					<br>
 
-					<h2>This Yankee Great finished his career with a .310 BA, 260 HR, and 3465 Hits:</h2>
-						<input type="radio" name="question2" value="wrong"> Mickey Mantle <br>
-						<input type="radio" name="question2" value="wrong"> Don Mattingly <br>
-						<input type="radio" name="question2" value="wrong"> Lou Gehrig
-						<input type="radio" name="question2" value="correct"> Derek Jeter
-						
+										
+				<div class="panel panel-default">
+  					<div class="panel-body">
+    					<h2>This Yankee Great finished his career with a .310 BA, 260 HR, and 3465 Hits:</h2>
+    						<input type="radio" name="question2" value="wrong"> Mickey Mantle <br>
+							<input type="radio" name="question2" value="wrong"> Don Mattingly <br>
+							<input type="radio" name="question2" value="wrong"> Lou Gehrig <br>
+							<input type="radio" name="question2" value="correct"> Derek Jeter <br>
+  					</div>
+				</div>						
 						 
 					<h1>I entered the game to Enter Sandman, and had 652 Regular Season Saves, who am I?</h1><br>
 						<input type="radio" name="question3" value="wrong"> Goose Gossage

@@ -5,7 +5,7 @@
 	 	$("#results").hide();
 	 	$("#display").hide();
 	 	var intervalId;
-	 	var number = 5;
+	 	var number = 40;
 	 	var correct = 0;
 	 	var wrong = 0;
 	 	var noAnswer = 0;
