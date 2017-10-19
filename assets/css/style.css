@@ -13,7 +13,9 @@
 }
 
 body{
-	background-image: url("nybg.jpg")
+	background-image: url("nybg.jpg");
+	background-repeat: no-repeat;    
+    background-size: cover;
 	
 }
 
